@@ -125,7 +125,6 @@
 
                 <!-- selected player and budget  -->
                 <div>
-
                     <div class="grid grid-cols-1 gap-4">
                         <!-- selected player  -->
                         <div class="p-4 rounded-md bg-slate-900">
@@ -143,22 +142,25 @@
                             <h3 class="text-center text-2xl font-semibold mb-2">Budget</h3>
                             <hr class="w-4/5 mx-auto border-5 border-orange-600">
                             <div class="my-4">
+
                                 <!-- player expenses  -->
                                 <div>
-                                    <p>
-                                        Per Player
-                                        <input id="per-player-price"
-                                            class="w-24 p-2 ml-4 border border-gray-100 bg-slate-900" type="text">
-                                    </p>
+                                    <div>
+                                        <p>
+                                            Per Player
+                                            <input id="per-player-price"
+                                                class="w-24 p-2 ml-4 border border-gray-100 bg-slate-900" type="text">
+                                        </p>
+                                    </div>
+                                    <div class="card-actions justify-center my-4">
+                                        <button id="calculate-player-total"
+                                            class="px-16 btn btn-primary">Calculate</button>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <p>Player Expenses</p>
+                                        <p>$<span id="player-expenses">00</span></p>
+                                    </div>
                                 </div>
-                                <div class="card-actions justify-center my-4">
-                                    <button id="calculate-player-total" class="px-16 btn btn-primary">Calculate</button>
-                                </div>
-                                <div class="flex justify-between">
-                                    <p>Player Expenses</p>
-                                    <p>$<span id="player-expenses">00</span></p>
-                                </div>
-
 
                                 <!-- all expenses  -->
                                 <div>
@@ -185,8 +187,11 @@
                                         <p class="text-orange-600">$<span id="total">00</span></p>
                                     </div>
                                 </div>
+
                             </div>
+
                         </div>
+
                     </div>
 
                 </div>
