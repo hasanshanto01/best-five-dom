@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body class="bg-slate-800">
     <!-- header section  -->
     <header class="h-80 flex justify-center items-center bg-slate-900">
         <div class="text-center">
@@ -25,12 +25,12 @@
     </header>
 
     <!-- main section  -->
-    <main class="bg-slate-800">
+    <main class="my-8">
         <!-- player cards, selected player and budget  -->
         <section class="text-gray-100 w-4/5 mx-auto">
             <div class="grid grid-cols-3 gap-4">
                 <!-- player-card  -->
-                <div class="col-span-2 border-2 border-red-700">
+                <div class="col-span-2">
 
                     <!-- player cards  -->
                     <div class="grid grid-cols-3 gap-4">
@@ -140,11 +140,11 @@
                 </div>
 
                 <!-- selected player and budget  -->
-                <div class=" border-2 border-red-700">
+                <div>
 
                     <div class="grid grid-cols-1 gap-4">
                         <!-- selected player  -->
-                        <div class="p-5 border-2 border-blue-700 bg-slate-900">
+                        <div class="p-4 rounded-md bg-slate-900">
                             <h3 class="text-center text-2xl font-semibold mb-2">Selected-V</h3>
                             <hr class="w-4/5 mx-auto border-5 border-orange-600">
                             <div class="w-4/5 h-40 mx-auto my-4 text-xl">
@@ -160,7 +160,7 @@
                         </div>
 
                         <!-- budget -->
-                        <div class="p-5 border-2 border-blue-700 bg-slate-900">
+                        <div class="p-3 mb-5 rounded-md bg-slate-900">
                             <h3 class="text-center text-2xl font-semibold mb-2">Budget</h3>
                             <hr class="w-4/5 mx-auto border-5 border-orange-600">
                             <div class="my-4">
@@ -216,6 +216,14 @@
             </div>
         </section>
     </main>
+
+    <!-- footer section  -->
+    <footer class="h-32">
+        <hr>
+        <p class="text-gray-100 text-center mt-10">Copyright <span>&copy;</span> 2022
+            All Rights
+            Reserved.</p>
+    </footer>
 </body>
 
 </html>
