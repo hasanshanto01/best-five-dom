@@ -145,20 +145,18 @@
                             <div class="my-4">
                                 <!-- player expenses  -->
                                 <div>
-                                    <div>
-                                        <p>
-                                            Per Player
-                                            <input class="w-24 p-2 ml-4 border border-gray-100 bg-slate-900"
-                                                type="text">
-                                            </pclas>
-                                    </div>
-                                    <div class="card-actions justify-center my-4">
-                                        <button class="px-16 btn btn-primary">Calculate</button>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <p>Player Expenses</p>
-                                        <p>$<span>00</span></p>
-                                    </div>
+                                    <p>
+                                        Per Player
+                                        <input id="per-player-price"
+                                            class="w-24 p-2 ml-4 border border-gray-100 bg-slate-900" type="text">
+                                    </p>
+                                </div>
+                                <div class="card-actions justify-center my-4">
+                                    <button id="calculate-player-total" class="px-16 btn btn-primary">Calculate</button>
+                                </div>
+                                <div class="flex justify-between">
+                                    <p>Player Expenses</p>
+                                    <p>$<span id="player-expenses">00</span></p>
                                 </div>
 
 
