@@ -35,7 +35,7 @@ document.getElementById('player-card').addEventListener('click', function (event
             // console.log(selectPlayerField, playerNameList.length)
         }
         else {
-            alert('You already select five player!')
+            alert('You already select five players!')
             playerNameList.pop()
             // console.log(playerNameList.length)
         }
@@ -67,3 +67,22 @@ document.getElementById('calculate-player-total').addEventListener('click', func
 })
 
 // calculate total
+document.getElementById('calculate-total').addEventListener('click', function () {
+    // console.log('calculate total clicked') 
+    const managerPrice = parseInt(document.getElementById('manager-price').value);
+    const coachPrice = parseInt(document.getElementById('coach-price').value);
+    let total = parseInt(document.getElementById('total').innerText);
+    // console.log(total)
+    if (isNaN(managerPrice) != true && isNaN(coachPrice) != true) {
+        const playerExpenses = parseInt(document.getElementById('player-expenses').innerText);
+
+        total = playerExpenses + managerPrice + coachPrice;
+        document.getElementById('total').innerText = total;
+        console.log(total)
+    }
+    else {
+        alert('Enter number!')
+        document.getElementById('total').innerText = '00';
+    }
+    // console.log(isNaN(managerPrice), typeof coachPrice)
+})
