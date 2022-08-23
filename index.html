@@ -30,7 +30,7 @@
         <section class="text-gray-100 w-4/5 mx-auto">
             <div class="grid grid-cols-3 gap-4">
                 <!-- player-card  -->
-                <div class="col-span-2">
+                <div id="player-card" class="col-span-2">
 
                     <!-- player cards  -->
                     <div class="grid grid-cols-3 gap-4">
@@ -40,9 +40,9 @@
                             <div class="card-body items-center">
                                 <h2 class="card-title text-sm font-bold">Cristiano Ronaldo</h2>
                                 <p><span>815 Goal</span> . <span>230 Assist</span></p>
-                                <div class="card-actions justify-end">
-                                    <button class="px-10 btn btn-primary">Select</button>
-                                </div>
+                                <!-- <div class="card-actions justify-end">
+                                </div> -->
+                                <button class="px-10 btn btn-primary">Select</button>
                             </div>
                         </div>
                         <!-- player-2  -->
@@ -51,9 +51,7 @@
                             <div class="card-body items-center">
                                 <h2 class="card-title text-sm font-bold">Lionel Messi</h2>
                                 <p><span>769 Goal</span> . <span>331 Assist</span></p>
-                                <div class="card-actions justify-end">
-                                    <button class="px-10 btn btn-primary">Select</button>
-                                </div>
+                                <button class="px-10 btn btn-primary">Select</button>
                             </div>
                         </div>
                         <!-- player-3  -->
@@ -62,9 +60,7 @@
                             <div class="card-body items-center">
                                 <h2 class="card-title text-sm font-bold">Neymar Jr</h2>
                                 <p><span>401 Goal</span> . <span>224 Assist</span></p>
-                                <div class="card-actions justify-end">
-                                    <button class="px-10 btn btn-primary">Select</button>
-                                </div>
+                                <button class="px-10 btn btn-primary">Select</button>
                             </div>
                         </div>
                         <!-- player-4  -->
@@ -73,9 +69,7 @@
                             <div class="card-body items-center">
                                 <h2 class="card-title text-sm font-bold">Karim Benzema</h2>
                                 <p><span>389 Goal</span> . <span>218 Assist</span></p>
-                                <div class="card-actions justify-end">
-                                    <button class="px-10 btn btn-primary">Select</button>
-                                </div>
+                                <button class="px-10 btn btn-primary">Select</button>
                             </div>
                         </div>
                         <!-- player-5  -->
@@ -84,9 +78,7 @@
                             <div class="card-body items-center">
                                 <h2 class="card-title text-sm font-bold">Luka Modrić</h2>
                                 <p><span>265 Goal</span> . <span>224 Assist</span></p>
-                                <div class="card-actions justify-end">
-                                    <button class="px-10 btn btn-primary">Select</button>
-                                </div>
+                                <button class="px-10 btn btn-primary">Select</button>
                             </div>
                         </div>
                         <!-- player-6  -->
@@ -95,9 +87,7 @@
                             <div class="card-body items-center">
                                 <h2 class="card-title text-sm font-bold">Sergio Ramos</h2>
                                 <p><span>55 Goal</span> . <span>27 Assist</span></p>
-                                <div class="card-actions justify-end">
-                                    <button class="px-10 btn btn-primary">Select</button>
-                                </div>
+                                <button class="px-10 btn btn-primary">Select</button>
                             </div>
                         </div>
                         <!-- player-7  -->
@@ -106,9 +96,7 @@
                             <div class="card-body items-center">
                                 <h2 class="card-title text-sm font-bold">Kylian Mbappé</h2>
                                 <p><span>215 Goal</span> . <span>76 Assist</span></p>
-                                <div class="card-actions justify-end">
-                                    <button class="px-10 btn btn-primary">Select</button>
-                                </div>
+                                <button class="px-10 btn btn-primary">Select</button>
                             </div>
                         </div>
                         <!-- player-8  -->
@@ -117,9 +105,7 @@
                             <div class="card-body items-center">
                                 <h2 class="card-title text-sm font-bold">Kevin De Bruyne</h2>
                                 <p><span>287 Goal</span> . <span>238 Assist</span></p>
-                                <div class="card-actions justify-end">
-                                    <button class="px-10 btn btn-primary">Select</button>
-                                </div>
+                                <button class="px-10 btn btn-primary">Select</button>
                             </div>
                         </div>
                         <!-- player-9  -->
@@ -129,9 +115,7 @@
                                 <h2 class="card-title text-sm font-bold">Mohamed Salah
                                 </h2>
                                 <p><span>289 Goal</span> . <span>83 Assist</span></p>
-                                <div class="card-actions justify-end">
-                                    <button class="px-10 btn btn-primary">Select</button>
-                                </div>
+                                <button class="px-10 btn btn-primary">Select</button>
                             </div>
                         </div>
 
@@ -148,13 +132,8 @@
                             <h3 class="text-center text-2xl font-semibold mb-2">Selected-V</h3>
                             <hr class="w-4/5 mx-auto border-5 border-orange-600">
                             <div class="w-4/5 h-40 mx-auto my-4 text-xl">
-                                <ol class="list-decimal">
-                                    <li>item-1</li>
-                                    <li>item-2</li>
-                                    <li>item-3</li>
-                                    <li>item-4</li>
-                                    <li>item-5</li>
-
+                                <ol id="select-player-field" class="list-decimal">
+                                    <!--  player list -->
                                 </ol>
                             </div>
                         </div>
@@ -224,6 +203,8 @@
             All Rights
             Reserved.</p>
     </footer>
+
+    <script src="./js/btn.js"></script>
 </body>
 
 </html>
